@@ -1,0 +1,29 @@
+{
+  "name": "hokusai",
+  "version": "1.0.0",
+  "description": "Hokusai start page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netsensei/hokusai.git"
+  },
+  "keywords": [
+    "startpage"
+  ],
+  "author": "Matthias Vandermaesen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netsensei/hokusai/issues"
+  },
+  "homepage": "https://github.com/netsensei/hokusai#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.13",
+    "postcss": "^8.2.8",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
+  }
+}
