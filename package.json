@@ -20,10 +20,21 @@
   },
   "homepage": "https://github.com/netsensei/hokusai#readme",
   "devDependencies": {
+    "@iconify-icons/icomoon-free": "^1.1.0",
+    "@iconify-icons/mdi": "^1.1.13",
+    "@iconify-icons/simple-icons": "^1.1.18",
+    "@iconify/vue": "^2.0.0-rc.3",
+    "@vue/compiler-sfc": "^3.0.7",
+    "bootstrap": "^4.6.0",
     "laravel-mix": "^6.0.13",
     "postcss": "^8.2.8",
     "resolve-url-loader": "^3.1.2",
     "sass": "^1.32.8",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "vue": "^3.0.7",
+    "vue-loader": "^16.1.2"
+  },
+  "dependencies": {
+    "@iconify/json": "^1.1.325"
   }
 }
