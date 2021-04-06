@@ -10080,10 +10080,24 @@ h3 {
   margin-top: 20em;
   padding: 0.75em;
   border-radius: 0.45rem;
-  background-color: #c1bdb6;
+  background-color: #b9b9b4;
 }
-.search .input-group button {
-  width: 4.5em;
+.search .input-group .engines ul {
+  margin: 0 0.75em 0 0;
+}
+.search .input-group .engines a {
+  font-size: 1.5em;
+  color: #646461;
+}
+.search .input-group .engines a.active {
+  color: #8f8e8b;
+}
+.search .input-group .engines a:hover {
+  color: #e4e3dd;
+}
+.search .input-group input {
+  background: #e4e3dd;
+  border: none;
 }
 .search .input-group button:hover {
   background-color: #918d85;

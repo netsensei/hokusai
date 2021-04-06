@@ -3,10 +3,30 @@
     padding: 0.75em;
 
     border-radius: 0.45rem;
-    background-color: #c1bdb6;        
+    background-color: #b9b9b4;
 
-    .input-group button {
-        width: 4.5em;
+    .input-group .engines {
+        ul {
+            margin: 0 0.75em 0 0;
+        }
+
+        a {
+            font-size: 1.5em;
+            color: #646461;
+        }
+
+        a.active {
+            color: #8f8e8b;
+        }
+
+        a:hover {
+            color: #e4e3dd;
+        }
+    }
+
+    .input-group input {
+        background: #e4e3dd;
+        border: none;
     }
 
     .input-group button:hover {
