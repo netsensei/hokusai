@@ -49,6 +49,11 @@ const actions = [
         link: "https://github.com"
     },
     {
+        icon: "simple-icons:wikipedia",
+        name: "Wikipedia",
+        link: "https://www.wikipedia.org/"
+    },
+    {
         icon: "simple-icons:bitbucket",
         name: "Bitbucket",
         link: "https://bitbucket.com"
@@ -57,6 +62,11 @@ const actions = [
         icon: "simple-icons:mastodon",
         name: "Mastodon",
         link: "https://mastodon.social"
+    },
+    {
+        icon: "simple-icons:whatsapp",
+        name: "Whatsapp",
+        link: "https://web.whatsapp.com/"
     },
     {
         icon: "simple-icons:gmail",
