@@ -7,15 +7,10 @@
                     v-for="action in actions"
                     :key="action.name"
                     class="action"
-                    style="--bg-hover: #458588"
                     :href="action.link"
                 >
                     <div class="action-icon">
                         <Icon :icon="action.icon" class="icon" />
-                    </div>
-                    <div class="action-text">
-                      <span>{{ action.name }}</span>
-                        <span>{{ action.link }}</span>
                     </div>
                 </a>
                 </div>
