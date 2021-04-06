@@ -31,15 +31,6 @@
                             aria-label="Query" 
                             aria-describedby="button-addon2"
                             >
-                        <div class="input-group-append">
-                            <button 
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                            v-on:click="submit">
-                            Go!
-                            </button>
-                        </div>
                     </div>
                 </form>
             </div>
