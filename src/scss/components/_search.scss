@@ -12,15 +12,11 @@
 
         a {
             font-size: 1.5em;
-            color: #646461;
-        }
-
-        a.active {
             color: #8f8e8b;
         }
 
-        a:hover {
-            color: #e4e3dd;
+        a.active {
+            color: #646461;
         }
     }
 
