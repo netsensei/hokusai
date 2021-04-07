@@ -4,6 +4,12 @@
 
  Hokusai is a HTML page you can a set as default start page in your browser.
 
+![preview](https://github.com/netsensei/hokusai/blob/main/media/preview.jpg)
+
+## Demo
+
+Check out the [demo](https://netsensei.github.io/hokusai/).
+
 ## Installation
 
 Clone or download this repo, generate assets, install in your browser.
