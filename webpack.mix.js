@@ -8,6 +8,7 @@ mix.js('./src/js/index.js', 'js')
 mix.setResourceRoot('../')
 
 mix.copyDirectory('./images', './static/images')
+mix.copyDirectory('./fonts', './static/fonts')
 
 if (mix.inProduction()) {
     mix.version()

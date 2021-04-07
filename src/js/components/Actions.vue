@@ -1,10 +1,15 @@
 <template>
     <div class="container actions">
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-md-center">
+            <div 
+                v-for="actionGroup in actionGroups"
+                :key="actionGroup.name"
+                class="action-group col-lg-4"
+            >
+                <h2 class="action-group-title">{{ actionGroup.label }}</h2>
                 <div class="action-grid">
                 <a
-                    v-for="action in actions"
+                    v-for="action in actionGroup.actions"
                     :key="action.name"
                     class="action"
                     :href="action.link"
@@ -27,61 +32,69 @@ import icoMoonIcons from '@iconify/json/json/icomoon-free.json';
 import simpleIcons from '@iconify/json/json/mdi.json';
 
 
-const actions = [
+const actionGroups = [
     {
-        icon: "mdi:youtube",
-        name: "YouTube",
-        link: "https://youtube.com"
+        name: "comms",
+        label: "Comms",
+        actions: [
+            {
+                icon: "mdi:youtube",
+                name: "YouTube",
+                link: "https://youtube.com"
+            },
+            {
+                icon: "mdi:reddit",
+                name: "Reddit",
+                link: "https://reddit.com"
+            },
+            {
+                icon: "icomoon-free:hackernews",
+                name: "Hackernews",
+                link: "https://news.ycombinator.com/"
+            },
+            {
+                icon: "simple-icons:mastodon",
+                name: "Mastodon",
+                link: "https://mastodon.social"
+            },
+        ]
     },
     {
-        icon: "mdi:reddit",
-        name: "Reddit",
-        link: "https://reddit.com"
+        name: "coding",
+        label: "Coding",
+        actions: [
+            {
+                icon: "simple-icons:github",
+                name: "Github",
+                link: "https://github.com"
+            },
+            {
+                icon: "simple-icons:bitbucket",
+                name: "Bitbucket",
+                link: "https://bitbucket.com"
+            },
+        ]
     },
     {
-        icon: "icomoon-free:hackernews",
-        name: "Hackernews",
-        link: "https://news.ycombinator.com/"
-    },
-    {
-        icon: "simple-icons:github",
-        name: "Github",
-        link: "https://github.com"
-    },
-    {
-        icon: "simple-icons:wikipedia",
-        name: "Wikipedia",
-        link: "https://www.wikipedia.org/"
-    },
-    {
-        icon: "simple-icons:bitbucket",
-        name: "Bitbucket",
-        link: "https://bitbucket.com"
-    },
-    {
-        icon: "simple-icons:mastodon",
-        name: "Mastodon",
-        link: "https://mastodon.social"
-    },
-    {
-        icon: "simple-icons:whatsapp",
-        name: "Whatsapp",
-        link: "https://web.whatsapp.com/"
-    },
-    {
-        icon: "simple-icons:gmail",
-        name: "Gmail",
-        link: "https://gmail.com"
-    },
-    {
-        icon: "simple-icons:googledrive",
-        name: "Gmail",
-        link: "https://drive.google.com/"
-    },
-    {
-        icon: "simple-icons:pi-hole",
-        name: "Pi-hole",
-        link: "http://hermes.colada.lan/admin"
+        name: "productivity",
+        label: "Productivity",
+        actions: [
+            {
+                icon: "simple-icons:whatsapp",
+                name: "Whatsapp",
+                link: "https://web.whatsapp.com/"
+            },
+            {
+                icon: "simple-icons:gmail",
+                name: "Gmail",
+                link: "https://gmail.com"
+            },
+            {
+                icon: "simple-icons:googledrive",
+                name: "Gmail",
+                link: "https://drive.google.com/"
+            },
+        ]
     },
 ]
 
@@ -95,7 +108,7 @@ export default {
     },
     data () {
         return {
-            actions: actions
+            actionGroups: actionGroups
         }
     }
 }

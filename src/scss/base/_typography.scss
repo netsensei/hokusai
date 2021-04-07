@@ -1,0 +1,27 @@
+// @font-face {
+//     font-family: 'PannoTextNormal';
+//     src: url('../../../_common/ugent/fonts/ugentpannotext-normal-web.eot');
+//     src: url('../../../_common/ugent/fonts/ugentpannotext-normal-web.eot') format('embedded-opentype'),
+//     url('../../../_common/ugent/fonts/ugentpannotext-normal-web.woff') format('woff'),
+//     url('../../../_common/ugent/fonts/ugentpannotext-normal-web.ttf') format('truetype');
+//   }
+
+@font-face {
+    font-family: 'ZillaSlabBold';
+    src: url('../../../fonts/ZillaSlab-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ZillaSlabRegular';
+    src: url('../../../fonts/ZillaSlab-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ZillaSlabHighlightBold';
+    src: url('../../../fonts/ZillaSlabHighlight-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ZillaSlabHighlightRegular';
+    src: url('../../../fonts/ZillaSlabHighlight-Regular.ttf') format('truetype');
+}

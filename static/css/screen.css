@@ -10020,13 +10020,39 @@ h3 {
   background-size: cover;
 }
 
+@font-face {
+  font-family: "ZillaSlabBold";
+  src: url(../fonts/ZillaSlab-Bold.ttf?64d4137b162cb341a40dbd5140f9aeef) format("truetype");
+}
+@font-face {
+  font-family: "ZillaSlabRegular";
+  src: url(../fonts/ZillaSlab-Regular.ttf?77d29d36cb7664b0568e87376a1f1ed4) format("truetype");
+}
+@font-face {
+  font-family: "ZillaSlabHighlightBold";
+  src: url(../fonts/ZillaSlabHighlight-Bold.ttf?8c2fe826481293ce854160e6e9d4f8df) format("truetype");
+}
+@font-face {
+  font-family: "ZillaSlabHighlightRegular";
+  src: url(../fonts/ZillaSlabHighlight-Regular.ttf?ba167f7046298b175da5d49d7f2806d6) format("truetype");
+}
+.action-group h2.action-group-title {
+  font-family: ZillaSlabRegular;
+  color: #8f8e8b;
+  margin: 0.5rem;
+  background: #b9b9b4;
+  padding: 0 0.35em;
+  display: inline-block;
+  border-radius: 0.45rem;
+}
+
 .actions {
   margin-top: 3em;
   padding: 0;
 }
 .actions .action-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 0;
   grid-row-gap: 0;
 }
@@ -10044,10 +10070,10 @@ h3 {
 }
 .actions .action-icon {
   margin: 0 auto;
-  padding: 1.5em 0;
+  padding: 1.5em;
 }
 .actions .icon {
-  font-size: 5em;
+  font-size: 5.5em;
   color: #8f8e8b;
 }
 .actions .action:hover .icon {
