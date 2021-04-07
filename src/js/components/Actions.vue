@@ -53,6 +53,11 @@ const actionGroups = [
                 link: "https://news.ycombinator.com/"
             },
             {
+                icon: "simple-icons:wikipedia",
+                name: "Wikipedia",
+                link: "https://en.wikipedia.org"
+            },
+            {
                 icon: "simple-icons:mastodon",
                 name: "Mastodon",
                 link: "https://mastodon.social"
