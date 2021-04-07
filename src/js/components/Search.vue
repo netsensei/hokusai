@@ -49,11 +49,6 @@ const engines = {
         engine: 'https://duckduckgo.com/?q=',
         icon: 'simple-icons:duckduckgo'
     },
-    google: {
-        name: 'google',
-        engine: 'https://www.google.com/search?q=',
-        icon: 'mdi:google'
-    },
     so: {
         name: 'so',
         engine: 'https://stackoverflow.com/search?q=',
@@ -63,6 +58,11 @@ const engines = {
         name: 'gh',
         engine: 'https://github.com/search?q=',
         icon: 'simple-icons:github'
+    },
+    wk: {
+        name: 'wk',
+        engine: 'https://en.wikipedia.org/wiki/Special:Search?search=',
+        icon: 'simple-icons:wikipedia'
     }
 }
 
