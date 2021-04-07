@@ -34,8 +34,8 @@ import simpleIcons from '@iconify/json/json/mdi.json';
 
 const actionGroups = [
     {
-        name: "comms",
-        label: "Comms",
+        name: "community",
+        label: "Community",
         actions: [
             {
                 icon: "mdi:youtube",
