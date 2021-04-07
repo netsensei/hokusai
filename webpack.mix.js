@@ -5,6 +5,8 @@ mix.js('./src/js/index.js', 'js')
     .setPublicPath('./static')
     .vue({ version: 3 })
 
+mix.setResourceRoot('../')
+
 mix.copyDirectory('./images', './static/images')
 
 if (mix.inProduction()) {
