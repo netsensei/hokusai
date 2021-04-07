@@ -6,25 +6,20 @@
                     <div class="input-group">
                         <div class="input-group-prepend engines">
                             <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="#" :class="classGoogle" v-on:click.prevent="selectEngine('google')">
-                                        <Icon icon="mdi:google" class="icon" />
+                                <li 
+                                    v-for="engine in engines"
+                                    :key="engine.name"
+                                    class="list-inline-item"
+                                >
+                                    <a href="#" :class="activeEngine(engine.name)" v-on:click.prevent="selectEngine(engine.name)">
+                                        <Icon :icon="engine.icon" class="icon" />
                                     </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" :class="classDdg" v-on:click.prevent="selectEngine('ddg')">
-                                        <Icon icon="simple-icons:duckduckgo" class="icon" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" :class="classSo" v-on:click.prevent="selectEngine('so')">
-                                        <Icon icon="simple-icons:stackoverflow" class="icon" />
-                                    </a>
-                                </li>
+                                </li>                                
                             </ul>
                         </div>
                         <input 
                             v-model="query"
+                            v-on:keyup="monitor"
                             placeholder="At your service..."
                             type="text" 
                             class="form-control" 
@@ -49,47 +44,58 @@ addCollection(mdiIcons);
 addCollection(simpleIcons);
 addCollection(icoMoonIcons);
 
+const engines = {
+    ddg: {
+        name: 'ddg',
+        engine: 'https://duckduckgo.com/?q=',
+        shortcut: 'd',
+        icon: 'simple-icons:duckduckgo'
+    },
+    google: {
+        name: 'google',
+        engine: 'https://www.google.com/search?q=',
+        shortcut: 'o',
+        icon: 'mdi:google'
+    },
+    so: {
+        name: 'so',
+        engine: 'https://stackoverflow.com/search?q=',
+        shortcut: 's',
+        icon: 'simple-icons:stackoverflow'
+    }
+}
+
 export default {
     components: {
         Icon
     },
     data () {
         return {
+            engines: engines,
             engine: '',
             query: ''
         }
     },
-    computed: {
-        classDdg: function () {
-            return {
-                active: (this.engine === 'ddg')
-            }
-        },
-        classGoogle: function () {
-            return {
-                active: (this.engine === 'google')
-            }
-        },
-        classSo: function () {
-            return {
-                active: (this.engine === 'so')
-            }
-        },
-    },
     methods: {
         submit: function () {
-            const engines = {
-                ddg: 'https://duckduckgo.com/?q=',
-                google: 'https://www.google.com/search?q=',
-                so: 'https://stackoverflow.com/search?q='
-            }
-
-            const url = engines[this.engine] + this.query
+            const url = engines[this.engine].engine + this.query
             window.open(url,'_self')
         },
         selectEngine: function (engine) {
             localStorage.setItem('defaultEngine', engine)
             this.engine = engine
+        },
+        activeEngine: function (engine) {
+            return {
+                active: (this.engine === engine)
+            }
+        },
+        monitor: function (event) {
+            if (event.ctrlKey) {
+                if (event.key === 'g') {
+                    this.selectEngine('google')
+                }
+            }
         }
     },
     mounted: function () {

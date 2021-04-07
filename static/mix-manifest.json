@@ -2,10 +2,6 @@
     "/js/index.js": "/js/index.js",
     "/css/screen.css": "/css/screen.css",
     "/images/greatwave.jpg": "/images/greatwave.jpg",
-    "/fonts/ZillaSlabHighlight-Bold.ttf": "/fonts/ZillaSlabHighlight-Bold.ttf",
-    "/fonts/ZillaSlabHighlight-Regular.ttf": "/fonts/ZillaSlabHighlight-Regular.ttf",
-    "/fonts/Zilla_Slab_Highlight.zip": "/fonts/Zilla_Slab_Highlight.zip",
-    "/fonts/OFL.txt": "/fonts/OFL.txt",
     "/fonts/ZillaSlab-Bold.ttf": "/fonts/ZillaSlab-Bold.ttf",
     "/fonts/ZillaSlab-BoldItalic.ttf": "/fonts/ZillaSlab-BoldItalic.ttf",
     "/fonts/ZillaSlab-Italic.ttf": "/fonts/ZillaSlab-Italic.ttf",
@@ -16,5 +12,6 @@
     "/fonts/ZillaSlab-Regular.ttf": "/fonts/ZillaSlab-Regular.ttf",
     "/fonts/ZillaSlab-SemiBold.ttf": "/fonts/ZillaSlab-SemiBold.ttf",
     "/fonts/ZillaSlab-SemiBoldItalic.ttf": "/fonts/ZillaSlab-SemiBoldItalic.ttf",
-    "/fonts/Zilla_Slab.zip": "/fonts/Zilla_Slab.zip"
+    "/fonts/ZillaSlabHighlight-Bold.ttf": "/fonts/ZillaSlabHighlight-Bold.ttf",
+    "/fonts/ZillaSlabHighlight-Regular.ttf": "/fonts/ZillaSlabHighlight-Regular.ttf"
 }
