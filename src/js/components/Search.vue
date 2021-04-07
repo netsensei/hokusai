@@ -55,7 +55,7 @@ export default {
     },
     data () {
         return {
-            engine: 'ddg',
+            engine: '',
             query: ''
         }
     },
@@ -83,13 +83,23 @@ export default {
                 google: 'https://www.google.com/search?q=',
                 so: 'https://stackoverflow.com/search?q='
             }
-            
+
             const url = engines[this.engine] + this.query
             window.open(url,'_self')
         },
         selectEngine: function (engine) {
+            localStorage.setItem('defaultEngine', engine)
             this.engine = engine
         }
+    },
+    mounted: function () {
+        const defaultEngine = localStorage.getItem('defaultEngine')
+
+        if (! defaultEngine) {
+            localStorage.setItem('defaultEngine', 'ddg')
+        }
+
+        this.engine = localStorage.getItem('defaultEngine')
     }
 }
 </script>
