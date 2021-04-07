@@ -19,7 +19,6 @@
                         </div>
                         <input 
                             v-model="query"
-                            v-on:keyup="monitor"
                             placeholder="At your service..."
                             type="text" 
                             class="form-control" 
@@ -48,20 +47,22 @@ const engines = {
     ddg: {
         name: 'ddg',
         engine: 'https://duckduckgo.com/?q=',
-        shortcut: 'd',
         icon: 'simple-icons:duckduckgo'
     },
     google: {
         name: 'google',
         engine: 'https://www.google.com/search?q=',
-        shortcut: 'o',
         icon: 'mdi:google'
     },
     so: {
         name: 'so',
         engine: 'https://stackoverflow.com/search?q=',
-        shortcut: 's',
         icon: 'simple-icons:stackoverflow'
+    },
+    gh: {
+        name: 'gh',
+        engine: 'https://github.com/search?q=',
+        icon: 'simple-icons:github'
     }
 }
 
@@ -88,13 +89,6 @@ export default {
         activeEngine: function (engine) {
             return {
                 active: (this.engine === engine)
-            }
-        },
-        monitor: function (event) {
-            if (event.ctrlKey) {
-                if (event.key === 'g') {
-                    this.selectEngine('google')
-                }
             }
         }
     },
