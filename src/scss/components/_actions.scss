@@ -24,9 +24,7 @@
     }
     
     .action-icon {
-        // height: 64px;
         margin: 0 auto;
-        // padding-top: 13px;
         padding: 1.5em 0;
     }
     
@@ -35,7 +33,7 @@
         color: #8f8e8b;
     }
 
-    .icon:hover {
+    .action:hover .icon {
         color: #646461;
         transition: color .5s;
     }

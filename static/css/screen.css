@@ -10050,7 +10050,7 @@ h3 {
   font-size: 5em;
   color: #8f8e8b;
 }
-.actions .icon:hover {
+.actions .action:hover .icon {
   color: #646461;
   transition: color 0.5s;
 }
