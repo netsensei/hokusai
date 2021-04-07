@@ -78,6 +78,11 @@ const actions = [
         name: "Gmail",
         link: "https://drive.google.com/"
     },
+    {
+        icon: "simple-icons:pi-hole",
+        name: "Pi-hole",
+        link: "http://hermes.colada.lan/admin"
+    },
 ]
 
 addCollection(mdiIcons);
